@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/stylenobootstrap.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src=" https://cdn.jsdelivr.net/npm/underscore@1.13.1/underscore-umd-min.js " defer></script>
+    <script src="js/anime.min.js" defer></script>
+    <script src="js/scriptnobotstrap.js" defer></script>
+
+    <link rel="shortcut icon" href="img/bennytitle.jpg">
+    <title>Miniprojekt Flickr</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Andra inlämningen</a>
+        <a class="toTop" href="#top">Upp till toppen av sidan</a>
+        <a href="flickr1st.html">Första inlämningen</a>
+    </nav>
+
+
+    <h1>Bennys ultimata flickr sida! 2nd Edition</h1>
+
+    <form id='myForm'>
+        <fieldset>
+            <legend>Här väljer du vad du vill söka på:</legend>
+        <div class='box'>
+
+            <div>
+                Skriv ett sökord:
+                <input id='imageText' type='text' placeholder='Dogs' value='Dogs'>
+            </div>
+            <br>
+            <div>
+                <label for='imageSize'>Välj en storlek på bilden:</label>
+
+                <select id='imageSize' name='imageSize'>
+                    <option value='m'>Mindre bilder</option>
+                    <option value='w'>Mellanstora bilder</option>
+                    <option value='c'>Stora bilder</option>
+                </select>
+            </div>
+
+
+            <div>
+                <label for='imageNmbr'>Välj antal bilder du maximalt vill titta på:</label>
+
+                <select id='imageNmbr' name='imageNmbr'>
+                    <option value='1'>1 bild</option>
+                    <option value='2'>2 bilder</option>
+                    <option value='3'>3 bilder</option>
+                    <option value='6'>6 bilder</option>
+                    <option value='9'>9 bilder</option>
+                    <option value='21'>21 bilder</option>
+                    <option value='100'>100 bilder</option>
+                </select>
+            </div>
+            <br>
+            <div class="buttons">
+                <button id='submit'>Sök Flickr bilder</button>
+                <button type='reset' id='reset'>Börja om</button>
+                <button id="randomize">Random 1-66 bilder</button>
+                <br> <br>
+                <button id="gone">Klicka här för att få en gratis bil</button>
+            </div>
+        </fieldset>
+    </form>
+
+    <div id="searchedfor"></div>
+
+    </div>
+    <h2 class="battery-log"></h2>
+
+    <div id="flexboxen">
+
+        <h2 id='message'></h2>
+        <br>
+
+    </div>
+
+
+    
+    <footer>
+        <a class="toppen" href="#top">Upp till toppen av sidan</a>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
